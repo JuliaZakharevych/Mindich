@@ -174,5 +174,16 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5.5.4"></script>
+<script>
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      if (window.iFrameResizer && window.iFrameResizer.sendMessage) {
+        window.iFrameResizer.sendMessage({});
+      } else if (window.parentIFrame) {
+        window.parentIFrame.size();
+      }
+    });
+  }
+</script>
 </body>
 </html>
