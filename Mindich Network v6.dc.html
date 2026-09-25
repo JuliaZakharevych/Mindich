@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700&family=Noto+Sans:wght@400;600;700&display=swap">
+<style>
+  body { margin:0; background:#FFFFFF; }
+  a { color:#A4212B; }
+  a:hover { color:#7C161E; }
+  image-slot::part(empty) { display:none; }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="width:100%;font-family:'Noto Sans',system-ui,sans-serif;color:#16181C;-webkit-font-smoothing:antialiased;">
+<div style="max-width:980px;margin:0 auto;padding:clamp(20px,3vw,40px) clamp(14px,3vw,32px);display:flex;flex-direction:column;gap:18px;box-sizing:border-box;">
+
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <div style="font-family:'Source Serif 4',Georgia,serif;font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.1;letter-spacing:-0.4px;text-wrap:pretty;">How the alleged scheme worked</div>
+    <div style="font-size:clamp(14.5px,1.4vw,16px);line-height:1.45;color:#3C4249;text-wrap:pretty;">According to leaked charges and NABU tapes. Mudra and Mykytas link the bail laundering to the raiding scheme.</div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px 18px;padding-top:4px;">
+      <div style="display:flex;align-items:center;gap:7px;"><div style="width:14px;height:14px;border-radius:50%;box-shadow:0 0 0 3px #A4212B;"></div><div style="font-size:13px;">Charged</div></div>
+      <div style="display:flex;align-items:center;gap:7px;"><div style="width:24px;height:2px;background:#C08A1E;"></div><div style="font-size:13px;">Money</div></div>
+      <div style="display:flex;align-items:center;gap:7px;"><div style="width:24px;height:0;border-top:2px dashed #8E959E;"></div><div style="font-size:13px;">Identity not confirmed</div></div>
+    </div>
+  </div>
+
+  <div style="background:#F4F4F2;padding:18px clamp(10px,2vw,24px);display:flex;flex-direction:column;align-items:center;">
+
+    <div style="width:100%;max-width:680px;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:start;gap:0;">
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:0;">
+        <div style="display:grid;grid-template-columns:auto minmax(24px,1fr);align-items:center;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;width:clamp(78px,15vw,120px);">
+            <image-slot id="v4-mindich" shape="circle" style="width:clamp(70px,14vw,100px);height:clamp(70px,14vw,100px);border-radius:50%;box-shadow:0 0 0 4px #A4212B;" placeholder="Mindich"></image-slot>
+          </div>
+          <div style="display:flex;align-items:center;padding-right:6px;"><div style="flex:1;height:2px;background:#16181C;"></div><div style="width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid #16181C;"></div></div>
+        </div>
+        <div style="width:clamp(78px,15vw,120px);text-align:center;display:flex;flex-direction:column;gap:2px;">
+          <div style="font-weight:700;font-size:clamp(13.5px,1.6vw,16px);line-height:1.2;">Timur Mindich</div>
+          <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Alleged ringleader</div>
+        </div>
+        <div style="font-weight:600;font-size:12px;line-height:15px;padding:6px 8px 0 0;">→ asked Budanov to take over Sense Bank and help pay the bail; delivered cash</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;width:clamp(96px,17vw,140px);">
+        <image-slot id="v4-budanov" shape="circle" style="width:clamp(80px,16vw,116px);height:clamp(80px,16vw,116px);border-radius:50%;box-shadow:0 0 0 2px #16181C;" placeholder="Budanov"></image-slot>
+        <div style="font-weight:700;font-size:clamp(14px,1.7vw,17px);line-height:1.2;padding-top:4px;">Kyrylo Budanov</div>
+        <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Head of the President’s Office</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 0 0 12px;min-width:0;">
+        <image-slot data-sm="1" id="v4-yermak" shape="circle" style="width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px #A4212B;flex:none;" placeholder="Yermak"></image-slot>
+        <div style="font-size:11.5px;line-height:15px;color:#3C4249;">Until Nov. 2025, <b>Andriy Yermak</b> and Mindich allegedly controlled the bank</div>
+      </div>
+    </div>
+
+    <div style="width:100%;max-width:620px;display:grid;grid-template-columns:1fr;justify-items:center;text-align:center;padding-top:12px;">
+      <div style="width:2px;height:10px;background:#16181C;margin-bottom:6px;"></div>
+      <div style="font-weight:600;font-size:12.5px;line-height:16px;max-width:300px;">Budanov allegedly asked his deputy to launder the bail cash and supervised her</div>
+      <div style="width:2px;height:10px;background:#16181C;margin-top:6px;"></div>
+      <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #16181C;"></div>
+    </div>
+
+    <div style="display:flex;justify-content:center;align-items:flex-end;gap:18px;padding-top:8px;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;width:120px;">
+        <image-slot id="v4-mudra" shape="circle" style="width:88px;height:88px;border-radius:50%;box-shadow:0 0 0 4px #A4212B;" placeholder="Mudra"></image-slot>
+        <div style="font-weight:700;font-size:15px;line-height:18px;padding-top:5px;">Iryna Mudra</div>
+        <div style="font-size:12px;line-height:15px;color:#5A616A;">Budanov’s ex-deputy</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;width:110px;">
+        <image-slot data-sm="1" id="v4-mykytas" shape="circle" style="width:66px;height:66px;border-radius:50%;box-shadow:0 0 0 3px #A4212B;" placeholder="Mykytas"></image-slot>
+        <div style="font-weight:700;font-size:14px;line-height:17px;padding-top:4px;">Maksym Mykytas</div>
+        <div style="font-size:12px;line-height:15px;color:#5A616A;">Lawmaker</div>
+      </div>
+    </div>
+    <div style="background:#16181C;color:#FFFFFF;font-weight:700;font-size:11.5px;line-height:14px;letter-spacing:0.4px;padding:5px 12px;border-radius:999px;margin-top:10px;">IN BOTH SCHEMES</div>
+
+    <div style="width:100%;display:flex;justify-content:center;padding-top:8px;">
+      <div style="width:50%;height:12px;border:2px solid #16181C;border-bottom:none;box-sizing:border-box;"></div>
+    </div>
+    <div style="width:100%;height:10px;border-left:0;display:flex;justify-content:center;">
+      <div style="width:50%;display:flex;justify-content:space-between;">
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #9A6D10;margin-left:-5px;"></div>
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #2F4A7A;margin-right:-5px;"></div>
+      </div>
+    </div>
+
+    <div style="width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;padding-top:8px;">
+
+      <div style="background:#FFFFFF;border-top:4px solid #C08A1E;padding:14px 12px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8A5F0A;">Scheme 1 · Bail laundering</div>
+        <div style="display:flex;align-items:center;gap:8px;padding-top:10px;">
+          <image-slot data-sm="1" id="v6-dubovyk" shape="circle" style="width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 2px #A4212B;flex:none;" placeholder="Dubovyk"></image-slot>
+          <div style="font-size:12px;line-height:15px;color:#3C4249;text-align:left;">with <b>Viktor Dubovyk</b>, President’s Office</div>
+        </div>
+        <div style="font-weight:600;font-size:12.5px;line-height:16px;padding-top:10px;max-width:280px;">June 10: bank bosses agreed to work under Budanov’s and Mudra’s informal control</div>
+        <div style="width:2px;height:10px;background:#16181C;margin-top:6px;"></div>
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #16181C;"></div>
+        <div style="display:flex;justify-content:center;gap:14px;padding-top:6px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;width:104px;">
+            <image-slot data-sm="1" id="v4-stupak" shape="circle" style="width:56px;height:56px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;" placeholder="Stupak"></image-slot>
+            <div style="font-weight:700;font-size:13px;line-height:16px;padding-top:3px;">Oleksiy Stupak</div>
+            <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Sense Bank CEO</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;width:104px;">
+            <image-slot data-sm="1" id="v4-hlady" shape="circle" style="width:56px;height:56px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;" placeholder="Hladyshchenko"></image-slot>
+            <div style="font-weight:700;font-size:13px;line-height:16px;padding-top:3px;">Mykola Hladyshchenko</div>
+            <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Board chairman</div>
+          </div>
+        </div>
+        <div style="font-weight:700;font-size:12.5px;line-height:16px;color:#8A5F0A;padding-top:10px;">Hr 150 million routed through the bank</div>
+        <div style="width:2px;height:10px;background:#C08A1E;margin-top:6px;"></div>
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #C08A1E;"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:6px;width:130px;">
+          <image-slot data-sm="1" id="v4-halush" shape="circle" style="width:56px;height:56px;border-radius:50%;box-shadow:0 0 0 3px #A4212B;" placeholder="Halushchenko"></image-slot>
+          <div style="font-weight:700;font-size:13px;line-height:16px;padding-top:3px;">Herman Halushchenko</div>
+          <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Ex-minister, bail posted</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:2px dashed #C9CDD3;width:100%;justify-content:center;">
+          <image-slot data-sm="1" id="v4-arakhamia" shape="circle" style="width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;flex:none;" placeholder="Arakhamia"></image-slot>
+          <div style="font-size:12px;line-height:15px;color:#3C4249;text-align:left;max-width:220px;">“David,” possibly <b>Arakhamia</b>, allegedly sought payment from the bank. He denies it.</div>
+        </div>
+      </div>
+
+      <div style="background:#FFFFFF;border-top:4px solid #2F4A7A;padding:14px 12px 16px;display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <div style="font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#2F4A7A;">Scheme 2 · Corporate raiding</div>
+        <div style="display:flex;align-items:center;gap:8px;padding-top:10px;">
+          <image-slot data-sm="1" id="v4-stolar" shape="circle" style="width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 2px #A4212B;flex:none;" placeholder="Stolar"></image-slot>
+          <div style="font-size:12px;line-height:15px;color:#3C4249;text-align:left;">with <b>Vadym Stolar</b>, lawmaker</div>
+        </div>
+        <div style="font-weight:600;font-size:12.5px;line-height:16px;padding-top:10px;max-width:280px;">allegedly planned to instruct her, and considered pressuring her</div>
+        <div style="width:2px;height:10px;background:#16181C;margin-top:6px;"></div>
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #16181C;"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:6px;width:150px;">
+          <image-slot data-sm="1" id="v4-ferens" shape="circle" style="width:56px;height:56px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;" placeholder="Ferens"></image-slot>
+          <div style="font-weight:700;font-size:13px;line-height:16px;padding-top:3px;">Olena Ferens</div>
+          <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Deputy justice minister</div>
+        </div>
+        <div style="font-size:12px;line-height:15px;color:#5A616A;padding-top:6px;max-width:260px;">Her anti-raiding chief refused the orders; Mudra sought his dismissal.</div>
+        <div style="font-weight:600;font-size:12.5px;line-height:16px;padding-top:12px;">allegedly sought favorable rulings</div>
+        <div style="width:2px;height:10px;background:#16181C;margin-top:6px;"></div>
+        <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #16181C;"></div>
+        <div style="display:flex;justify-content:center;gap:14px;padding-top:6px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;width:104px;">
+            <image-slot data-sm="1" id="v4-horbasenko" shape="circle" style="width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;" placeholder="Horbasenko"></image-slot>
+            <div style="font-weight:700;font-size:12.5px;line-height:15px;padding-top:3px;">Pavlo Horbasenko</div>
+            <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Judge, “controllable”</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;width:104px;">
+            <image-slot data-sm="1" id="v4-ivchenko" shape="circle" style="width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;" placeholder="Ivchenko"></image-slot>
+            <div style="font-weight:700;font-size:12.5px;line-height:15px;padding-top:3px;">Anatolii Ivchenko</div>
+            <div style="font-size:11.5px;line-height:14px;color:#5A616A;">Judge</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid #E4E7EB;width:100%;justify-content:center;">
+          <image-slot data-sm="1" id="v4-smyrnov" shape="circle" style="width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 1px #9AA1AA;flex:none;" placeholder="Smyrnov"></image-slot>
+          <div style="font-size:12px;line-height:15px;color:#3C4249;text-align:left;max-width:220px;"><b>Andriy Smyrnov</b>, ex-deputy chief of staff, allegedly sought to influence Horbasenko</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="font-size:12.5px;line-height:17px;color:#5A616A;">Budanov is not named in the charges, which describe Mudra’s boss at the President’s Office; tapes use his full name. None of the allegations has been proven in court. Sources: leaked charges via Bihus.info, NABU tapes via Hromadske, court hearings. Graphic: The Kyiv Independent</div>
+
+</div>
+</div>
+</x-dc>
+</body>
+</html>
